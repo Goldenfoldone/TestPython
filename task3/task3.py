@@ -26,17 +26,6 @@ def update_values(data, valuesdist):
 
 update_values(tests, valuesdist)
 
-'''for i in tests:
-    if i.get('value') != None:
-        i['value'] = valuesdist[i['id']]
-    if i.get("values") != None:            
-        for j in  i["values"]:
-            if j.get('value') != None:
-                j['value'] = valuesdist[j['id']]
-            if j.get("values") != None: 
-                for k in j["values"]:
-                     if k.get('value') != None:
-                        k['value'] = valuesdist[k['id']]'''
 x = {'tests': tests}
 with open(file3, 'w', encoding='utf-8') as file:  
     json.dump(x, file, ensure_ascii=False, indent=4) 
