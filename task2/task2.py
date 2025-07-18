@@ -8,12 +8,12 @@ f = open(sys.argv[1]).readlines()
 fv = open(sys.argv[2]).readlines()
 
 
-xO = float(f[0][0])
-yO = float(f[0][2])
+xO = float(f[0].split(' ')[0])
+yO = float(f[0].split(' ')[1])
 r = float(f[1])
 for i in fv:
-    xT = float(i[0])
-    yT = float(i[2])
+    xT = float(i.split(' ')[0])
+    yT = float(i.split(' ')[1])
 
     d = math.sqrt((xT - xO)**2 + (yT - yO)**2)
 

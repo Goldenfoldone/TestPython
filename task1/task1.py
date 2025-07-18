@@ -1,5 +1,11 @@
-n = int(input())
-m = int(input())
+import sys
+
+if len(sys.argv) < 2:
+    print("Использование: python task1.py 3 4")
+    sys.exit(1)
+
+n = int(sys.argv[1])
+m = int(sys.argv[2])
 
 l = 1
 osnovmassiv = [0]
